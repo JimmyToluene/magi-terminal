@@ -51,6 +51,8 @@ fi
 
 The guards matter. Without the `-t 1` test the escape sequences get emitted into non-TTY streams and corrupt `scp`, `rsync`, and `git` over SSH.
 
+**Using Powerlevel10k? Put this block *above* p10k's instant prompt block rather than appending it to the end of the file.** Instant prompt captures everything `.zshrc` writes to the console, so escape sequences emitted below it never reach the terminal. The failure is silent and easy to misread: the palette does nothing at login, yet sourcing `magi.sh` by hand a moment later works perfectly, which makes it look like a client-side problem. Backgrounding the call does not help — the subshell inherits the same captured stdout.
+
 ```bash
 source ~/.config/magi.sh                # MAGI Monochrome (default)
 EVA_ACCENT=1 source ~/.config/magi.sh   # NERV Console

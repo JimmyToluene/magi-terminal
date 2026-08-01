@@ -51,6 +51,8 @@ fi
 
 这些判断条件很重要。少了 `-t 1` 这一项，转义序列会被写进非 TTY 的数据流，从而破坏 `scp`、`rsync` 以及通过 SSH 执行的 `git`。
 
+**如果你在用 Powerlevel10k，请把这段放在 p10k 的 instant prompt 代码块之前，而不是追加到文件末尾。** instant prompt 会捕获 `.zshrc` 写往控制台的所有输出，因此在它之后发出的转义序列永远到不了终端。这个失败是无声的，而且很容易被误判：登录时配色毫无反应，可事后手动 `source magi.sh` 却完全正常，看上去就像是客户端的问题。把调用丢到后台也没有用——子 shell 继承的是同一个被捕获的 stdout。
+
 ```bash
 source ~/.config/magi.sh                # MAGI 单色（默认）
 EVA_ACCENT=1 source ~/.config/magi.sh   # NERV 控制台
