@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+#
+#  MAGI Terminal — Copyright (C) 2026 JimmyToluene
+#  Licensed under the GNU General Public License v3.0. See LICENSE.
+#
 # ============================================================================
 #  NERV CONSOLE — terminal palette derived from Neon Genesis Evangelion
 # ============================================================================

@@ -158,9 +158,9 @@ make
 
 | | ANSI 颜色（`OSC 4`） | 背景（`OSC 11`） | 字体 |
 |---|---|---|---|
-| xterm、kitty、Alacritty、iTerm2、GNOME Terminal、Windows Terminal | ✅ 自动 | ✅ 自动 | 客户端侧 |
-| Termius | ✅ 自动 | ❌ 需在主题编辑器中设置（可跨设备同步） | 客户端侧 |
-| MobaXterm（PuTTY 血统） | ❌ | ❌ | 客户端侧 |
+| xterm、kitty、Alacritty、iTerm2、GNOME Terminal、Windows Terminal | 自动 | 自动 | 客户端侧 |
+| Termius | 自动 | 手动 —— 在主题编辑器中设置，可跨设备同步 | 客户端侧 |
+| MobaXterm（PuTTY 血统） | 不支持 | 不支持 | 客户端侧 |
 
 **字体永远在客户端侧。** 服务端发送的是字节，渲染字形的是客户端。没有任何转义序列能改变这一点 —— 每一台设备都要各自安装该 TTF。
 
@@ -182,4 +182,6 @@ printf '\033]4;1;#00FF00\007'; printf '\033[31m如果这行字是绿色的，说
 
 ## 许可证
 
-MIT —— 参见 [LICENSE](LICENSE)。
+GNU 通用公共许可证 v3.0 —— 参见 [LICENSE](LICENSE)。
+
+Copyright (C) 2026 JimmyToluene。本程序是自由软件：你可以依照自由软件基金会发布的 GPL 第 3 版条款重新发布和修改它。发布本程序是希望它能有用，但**不附带任何担保**，甚至不含对适销性或特定用途适用性的默示担保。

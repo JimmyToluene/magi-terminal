@@ -158,9 +158,9 @@ Terminal appearance is negotiated between two machines, and clients honor wildly
 
 | | ANSI colors (`OSC 4`) | Background (`OSC 11`) | Font |
 |---|---|---|---|
-| xterm, kitty, Alacritty, iTerm2, GNOME Terminal, Windows Terminal | ✅ automatic | ✅ automatic | client-side |
-| Termius | ✅ automatic | ❌ set in theme editor (syncs across devices) | client-side |
-| MobaXterm (PuTTY-derived) | ❌ | ❌ | client-side |
+| xterm, kitty, Alacritty, iTerm2, GNOME Terminal, Windows Terminal | automatic | automatic | client-side |
+| Termius | automatic | manual — theme editor, syncs across devices | client-side |
+| MobaXterm (PuTTY-derived) | not supported | not supported | client-side |
 
 **The font is always client-side.** The server sends bytes; the client renders glyphs. No escape sequence changes that — install the TTF on every device.
 
@@ -182,4 +182,6 @@ printf '\033]4;1;#00FF00\007'; printf '\033[31mIf this text is GREEN, OSC 4 work
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+GNU General Public License v3.0 — see [LICENSE](LICENSE).
+
+Copyright (C) 2026 JimmyToluene. This program is free software: you may redistribute and modify it under the terms of the GPL as published by the Free Software Foundation, version 3. It is distributed in the hope that it will be useful, but **without any warranty** — without even the implied warranty of merchantability or fitness for a particular purpose.

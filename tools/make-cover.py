@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+#
+# MAGI Terminal — Copyright (C) 2026 JimmyToluene
+# Licensed under the GNU General Public License v3.0. See LICENSE.
 """
 make-cover.py — stack two terminal screenshots into the README cover.
 

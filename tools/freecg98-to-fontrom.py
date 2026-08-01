@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+#
+# MAGI Terminal — Copyright (C) 2026 JimmyToluene
+# Licensed under the GNU General Public License v3.0. See LICENSE.
 """
 freecg98-to-fontrom.py — synthesize a PC-9800 FONT.ROM from FREECG98.BMP.
 

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+#
+# MAGI Terminal — Copyright (C) 2026 JimmyToluene
+# Licensed under the GNU General Public License v3.0. See LICENSE.
 """
 make-nerv-screens.py — render the NERV console screens from scratch.
 
