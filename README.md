@@ -4,7 +4,7 @@
 
 **An amber-on-black terminal palette derived from the NERV console screens in *Neon Genesis Evangelion* — plus a clean-room build of the PC-98 font those screens were drawn from.**
 
-![Jet Alone boot screen rendered in the PC-9800 font](images/boot-32px.png)
+![MAGI Monochrome and NERV Console shell sessions side by side](images/cover.png)
 
 </div>
 
@@ -114,6 +114,10 @@ make
 ```
 
 Output lands in `dist/` as `pc-9800-regular.ttf` and `pc-9800-bold.ttf`.
+
+The Jet Alone boot screen, rebuilt in the resulting font at 32px and 16px:
+
+![Boot screen at 32px](images/boot-32px.png)
 
 ![Boot screen at 16px](images/boot-16px.png)
 
