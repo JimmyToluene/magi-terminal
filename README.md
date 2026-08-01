@@ -2,6 +2,8 @@
 
 # MAGI Terminal
 
+***God's in his heaven, all's right with the world.***
+
 <a href="README.md"><img alt="English" src="https://img.shields.io/badge/English-F66E25?style=for-the-badge"></a>
 <a href="README.zh-CN.md"><img alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-3A2A14?style=for-the-badge"></a>
 <a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-3A2A14?style=for-the-badge"></a>
@@ -196,6 +198,7 @@ printf '\033]4;1;#00FF00\007'; printf '\033[31mIf this text is GREEN, OSC 4 work
 - [hikaen2/ttf-pc9800](https://github.com/hikaen2/ttf-pc9800), the ROM-to-TrueType pipeline
 - [DOSBox-X](https://dosbox-x.com/), source of `FREECG98.BMP`, the clean-room PC-98 font
 - Shinonome 16, kanji coverage, bundled by ttf-pc9800
+- The line under the title is NERV's motto, carried around the organization's emblem. Robert Browning wrote it in *Pippa Passes* (1841).
 
 *Neon Genesis Evangelion* is © khara. This project is unaffiliated fan work; it ships no copyrighted assets.
 

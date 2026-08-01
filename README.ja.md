@@ -2,6 +2,8 @@
 
 # MAGI Terminal
 
+***神は天にいまし、すべて世は事もなし。***
+
 <a href="README.md"><img alt="English" src="https://img.shields.io/badge/English-3A2A14?style=for-the-badge"></a>
 <a href="README.zh-CN.md"><img alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-3A2A14?style=for-the-badge"></a>
 <a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-F66E25?style=for-the-badge"></a>
@@ -196,6 +198,7 @@ printf '\033]4;1;#00FF00\007'; printf '\033[31mこの行が緑ならOSC 4が効�
 - [hikaen2/ttf-pc9800](https://github.com/hikaen2/ttf-pc9800)、ROMからTrueTypeへの変換パイプライン
 - [DOSBox-X](https://dosbox-x.com/)、クリーンルーム実装のPC-98フォント `FREECG98.BMP` の入手元
 - 東雲フォント16、漢字のカバレッジ。ttf-pc9800に同梱
+- タイトル下の一節は NERV の標語で、組織の紋章を囲んで記されています。原典はロバート・ブラウニング『ピッパが通る』（1841）。
 
 『新世紀エヴァンゲリオン』は © khara。本プロジェクトは非公式のファンワークであり、著作物であるアセットは一切含みません。
 

@@ -2,6 +2,8 @@
 
 # MAGI Terminal
 
+***神在天国，世间一切安好。***
+
 <a href="README.md"><img alt="English" src="https://img.shields.io/badge/English-3A2A14?style=for-the-badge"></a>
 <a href="README.zh-CN.md"><img alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-F66E25?style=for-the-badge"></a>
 <a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-3A2A14?style=for-the-badge"></a>
@@ -196,6 +198,7 @@ printf '\033]4;1;#00FF00\007'; printf '\033[31m如果这行字是绿色的，说
 - [hikaen2/ttf-pc9800](https://github.com/hikaen2/ttf-pc9800)，ROM 转 TrueType 的流水线
 - [DOSBox-X](https://dosbox-x.com/)，`FREECG98.BMP` 的来源，洁净室 PC-98 字体
 - Shinonome 16，汉字覆盖，由 ttf-pc9800 自带
+- 标题下那句话是 NERV 的标语，环绕在该组织的徽记上。原句出自罗伯特·勃朗宁《皮帕经过》（1841）。
 
 《新世纪福音战士》版权归 khara 所有。本项目为非官方同人作品，不包含任何受版权保护的素材。
 
