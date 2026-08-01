@@ -84,6 +84,26 @@ That last point drives the whole design. In *Evangelion*, screen color is inform
 
 The background is `#000000` and not a softened near-black. The title cards and MAGI screens are pure black, and the whole look collapses without it.
 
+## The screens, rebuilt
+
+No frames from the series are reproduced here. `tools/make-nerv-screens.py` draws these from nothing but the palette above and the PC-9800 font this repository builds, on a 640×400 canvas — the native resolution of the PC-9801 those displays were modeled on — so they are original assets and a working demonstration of the palette at the same time.
+
+```bash
+python3 tools/make-nerv-screens.py -o images/
+```
+
+**The MAGI verdict display.** Three systems, three independent judgments, and the lone dissent carried by alert red rather than by shape or position. Casper is the one that breaks — the unit holding Naoko Akagi's aspect *as a woman*, which is why a deadlocked MAGI is a plot device rather than a formality.
+
+![MAGI verdict display](images/nerv-magi.png)
+
+**Pattern Blue.** The most load-bearing use of color in the series: blue means the target's wave pattern matches an Angel. This one screen is the entire argument for the NERV Console palette — if blue is not blue, the readout stops being information.
+
+![Pattern Blue readout](images/nerv-pattern-blue.png)
+
+**緊急事態.** Caution striping in official EVA yellow over title-card black, with the declaration itself in alert red.
+
+![Emergency declaration](images/nerv-alert.png)
+
 ## Legibility
 
 Brightness is assigned by **terminal role**, not by how often a color appears in the series.
