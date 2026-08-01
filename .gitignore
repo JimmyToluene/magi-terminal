@@ -1,0 +1,5 @@
+dist/
+*.ttf
+FREECG98.BMP
+FONT.ROM
+__pycache__/
