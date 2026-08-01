@@ -2,7 +2,13 @@
 
 # MAGI Terminal
 
-[English](README.md) · [简体中文](README.zh-CN.md) · **日本語**
+<a href="README.md"><img alt="English" src="https://img.shields.io/badge/English-3A2A14?style=for-the-badge"></a>
+<a href="README.zh-CN.md"><img alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-3A2A14?style=for-the-badge"></a>
+<a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-F66E25?style=for-the-badge"></a>
+
+<a href="LICENSE"><img alt="GPL-3.0" src="https://img.shields.io/badge/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9-GPL--3.0-F6E201?style=for-the-badge&labelColor=1A0C04"></a>
+<a href="#2つのパレット"><img alt="パレット2種" src="https://img.shields.io/badge/%E3%83%91%E3%83%AC%E3%83%83%E3%83%88-2%E7%A8%AE-FF9900?style=for-the-badge&labelColor=1A0C04"></a>
+<a href="#pc-9800-フォント"><img alt="PC-9800 フォント" src="https://img.shields.io/badge/%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88-PC--9800-54A2D4?style=for-the-badge&labelColor=1A0C04"></a>
 
 **『新世紀エヴァンゲリオン』のNERVコンソール画面から起こした、黒地にアンバーのターミナルパレット。あわせて、クリーンルーム実装によるPC-98フォントのビルド手順。**
 
@@ -11,6 +17,19 @@
 </div>
 
 ---
+
+## 目次
+
+- [これは何か](#これは何か)
+- [2つのパレット](#2つのパレット) —— MAGI モノクロームと NERV コンソール
+- [インストール](#インストール) —— Powerlevel10k の順序の罠を含む
+- [配色の根拠](#配色の根拠) —— スロットごとの出典
+- [画面の再構築](#画面の再構築) —— 完全な自作再現、スクリーンショットなし
+- [可読性](#可読性) —— 目視ではなく実測コントラスト
+- [PC-9800 フォント](#pc-9800-フォント) —— クリーンルームでの ROM ビルド
+- [サーバー側で制御できるもの・できないもの](#サーバー側で制御できるものできないもの)
+- [クレジット](#クレジット)
+- [ライセンス](#ライセンス)
 
 ## これは何か
 

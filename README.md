@@ -2,7 +2,13 @@
 
 # MAGI Terminal
 
-**English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
+<a href="README.md"><img alt="English" src="https://img.shields.io/badge/English-F66E25?style=for-the-badge"></a>
+<a href="README.zh-CN.md"><img alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-3A2A14?style=for-the-badge"></a>
+<a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-3A2A14?style=for-the-badge"></a>
+
+<a href="LICENSE"><img alt="GPL-3.0" src="https://img.shields.io/badge/license-GPL--3.0-F6E201?style=for-the-badge&labelColor=1A0C04"></a>
+<a href="#the-palettes"><img alt="2 palettes" src="https://img.shields.io/badge/palettes-2-FF9900?style=for-the-badge&labelColor=1A0C04"></a>
+<a href="#the-pc-9800-font"><img alt="PC-9800 font" src="https://img.shields.io/badge/font-PC--9800-54A2D4?style=for-the-badge&labelColor=1A0C04"></a>
 
 **An amber-on-black terminal palette derived from the NERV console screens in *Neon Genesis Evangelion* — plus a clean-room build of the PC-98 font those screens were drawn from.**
 
@@ -11,6 +17,19 @@
 </div>
 
 ---
+
+## Contents
+
+- [What this is](#what-this-is)
+- [The palettes](#the-palettes) — MAGI Monochrome and NERV Console
+- [Install](#install) — including the Powerlevel10k ordering trap
+- [Why these colors](#why-these-colors) — the canon sources, slot by slot
+- [The screens, rebuilt](#the-screens-rebuilt) — original recreations, no screencaps
+- [Legibility](#legibility) — measured contrast, not eyeballed
+- [The PC-9800 font](#the-pc-9800-font) — clean-room ROM build
+- [What the server can and cannot control](#what-the-server-can-and-cannot-control)
+- [Credits](#credits)
+- [License](#license)
 
 ## What this is
 

@@ -2,7 +2,13 @@
 
 # MAGI Terminal
 
-[English](README.md) · **简体中文** · [日本語](README.ja.md)
+<a href="README.md"><img alt="English" src="https://img.shields.io/badge/English-3A2A14?style=for-the-badge"></a>
+<a href="README.zh-CN.md"><img alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-F66E25?style=for-the-badge"></a>
+<a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-3A2A14?style=for-the-badge"></a>
+
+<a href="LICENSE"><img alt="GPL-3.0" src="https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-GPL--3.0-F6E201?style=for-the-badge&labelColor=1A0C04"></a>
+<a href="#两套配色"><img alt="2 套配色" src="https://img.shields.io/badge/%E9%85%8D%E8%89%B2-2%20%E5%A5%97-FF9900?style=for-the-badge&labelColor=1A0C04"></a>
+<a href="#pc-9800-字体"><img alt="PC-9800 字体" src="https://img.shields.io/badge/%E5%AD%97%E4%BD%93-PC--9800-54A2D4?style=for-the-badge&labelColor=1A0C04"></a>
 
 **源自《新世纪福音战士》中 NERV 控制台画面的琥珀色终端配色 —— 外加一套洁净室实现的 PC-98 字体构建流程。**
 
@@ -11,6 +17,19 @@
 </div>
 
 ---
+
+## 目录
+
+- [这是什么](#这是什么)
+- [两套配色](#两套配色) —— MAGI 单色与 NERV 控制台
+- [安装](#安装) —— 含 Powerlevel10k 的顺序陷阱
+- [配色依据](#配色依据) —— 逐槽位追溯设定出处
+- [重建这些画面](#重建这些画面) —— 完全原创的复现，不含截图
+- [可读性](#可读性) —— 实测对比度，而非凭感觉
+- [PC-9800 字体](#pc-9800-字体) —— 洁净室 ROM 构建
+- [服务端能控制什么、不能控制什么](#服务端能控制什么不能控制什么)
+- [致谢](#致谢)
+- [许可证](#许可证)
 
 ## 这是什么
 
