@@ -6,7 +6,7 @@
 
 **源自《新世纪福音战士》中 NERV 控制台画面的琥珀色终端配色 —— 外加一套洁净室实现的 PC-98 字体构建流程。**
 
-![MAGI 单色与 NERV 控制台配色的终端对比](images/cover.png)
+![实机效果 —— nvidia-smi 与 htop](images/cover.png)
 
 </div>
 

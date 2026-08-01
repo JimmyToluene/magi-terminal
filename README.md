@@ -6,7 +6,7 @@
 
 **An amber-on-black terminal palette derived from the NERV console screens in *Neon Genesis Evangelion* — plus a clean-room build of the PC-98 font those screens were drawn from.**
 
-![MAGI Monochrome and NERV Console shell sessions side by side](images/cover.png)
+![MAGI Monochrome on a live workstation — nvidia-smi and htop](images/cover.png)
 
 </div>
 
