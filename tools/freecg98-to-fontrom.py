@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 #
-# MAGI Terminal — Copyright (C) 2026 JimmyToluene
+# MAGI Terminal, Copyright (C) 2026 JimmyToluene
 # Licensed under the GNU General Public License v3.0. See LICENSE.
 """
-freecg98-to-fontrom.py — synthesize a PC-9800 FONT.ROM from FREECG98.BMP.
+freecg98-to-fontrom.py: synthesize a PC-9800 FONT.ROM from FREECG98.BMP.
 
 hikaen2/ttf-pc9800 builds a TrueType font from a NEC PC-9801 FONT.ROM dump.
 The FONT.ROM shipped in that repository is a placeholder: 288,768 bytes of
-0xFF. It is the correct size, so `make` runs to completion — and every glyph
+0xFF. It is the correct size, so `make` runs to completion, and every glyph
 in the resulting font is a solid block.
 
-Rather than source NEC's copyrighted firmware, this reads FREECG98.BMP, the
-free clean-room Anex86-compatible PC-98 font distributed with DOSBox-X, and
-writes a FONT.ROM in the byte layout that ttf-pc9800's parser expects.
+This reads FREECG98.BMP, the free clean-room Anex86-compatible PC-98 font
+distributed with DOSBox-X, and writes a FONT.ROM in the byte layout that
+ttf-pc9800's parser expects, leaving NEC's copyrighted firmware out of it.
 
 Layout produced (matches bin/fontrom2bdf):
 

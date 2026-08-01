@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #
-#  MAGI Terminal — Copyright (C) 2026 JimmyToluene
+#  MAGI Terminal, Copyright (C) 2026 JimmyToluene
 #  Licensed under the GNU General Public License v3.0. See LICENSE.
 #
 # ============================================================================
-#  NERV CONSOLE — terminal palette derived from Neon Genesis Evangelion
+#  NERV CONSOLE: terminal palette derived from Neon Genesis Evangelion
 # ============================================================================
 #  Applied via OSC escape sequences; works in Termius and any xterm-compatible
 #  emulator without touching application settings.
@@ -15,9 +15,9 @@
 #  Add to ~/.zshrc to persist. See README for the required guards.
 #
 #  Sourcing notes are per-slot below. Two rules govern both variants:
-#    - Background is #000000. Not near-black. The title cards and the MAGI
-#      text screens are pure black, and the whole look depends on that.
-#    - Nothing is desaturated for comfort. EVA's UI palette is blunt.
+#    - Background is #000000, pure. The title cards and the MAGI text
+#      screens are pure black, and the whole look depends on that.
+#    - Saturation stays where the series put it. EVA's UI palette is blunt.
 # ============================================================================
 
 _eva_set()  { printf '\033]%s;%s\007' "$1" "$2"; }
@@ -25,14 +25,13 @@ _eva_ansi() { printf '\033]4;%d;%s\007' "$1" "$2"; }
 
 if [ -z "${EVA_ACCENT:-}" ]; then
   # ------------------------------------------------------------------------
-  #  MAGI MONOCHROME — the amber-on-black text screens. Every slot is a stop
+  #  MAGI MONOCHROME: the amber-on-black text screens. Every slot is a stop
   #  on a ramp between the two official series colors: NERV orange #F66E25
-  #  and EVA yellow #F6E201. Nothing is not-amber.
+  #  and EVA yellow #F6E201. Every slot lands somewhere on that ramp.
   #
-  #  Brightness is assigned by TERMINAL ROLE, not by how often a color shows
-  #  up in the series. Slot 4 is directories (ls DIR=01;34) and is read more
-  #  than anything else on screen, so it is bright regardless of the fact
-  #  that blue is rare in EVA. Only 0 and 8 are allowed to recede.
+  #  Brightness follows TERMINAL ROLE. Slot 4 is directories (ls DIR=01;34)
+  #  and is read more than anything else on screen, so it stays bright even
+  #  though blue is rare in EVA. Only 0 and 8 are allowed to recede.
   # ------------------------------------------------------------------------
   bg=#000000    # title-card black
   fg=#FF9900    # NERV console body text
@@ -60,17 +59,17 @@ if [ -z "${EVA_ACCENT:-}" ]; then
     #  1  red      errors, hottest orange on the ramp
     #  2  green    executables (ls EXEC=01;32)
     #  3  yellow   warnings, device files
-    #  4  blue     DIRECTORIES (ls DIR=01;34) — must carry the screen
+    #  4  blue     DIRECTORIES (ls DIR=01;34), must carry the screen
     #  5  magenta  archives, images
     #  6  cyan     SYMLINKS (ls LINK=01;36)
     #  7  white    default text
-    #  8  br black dim chrome, comments — the only recessive slot
+    #  8  br black dim chrome, comments, the only recessive slot
     #  9-15       bright variants; 11 is official EVA yellow, the peak
 else
   # ------------------------------------------------------------------------
-  #  NERV CONSOLE — amber carries the screen; accents appear only where the
+  #  NERV CONSOLE: amber carries the screen; accents appear only where the
   #  series assigns them meaning. Blue is Pattern Blue, red is 警告, green is
-  #  the hex grid, purple is Unit-01. They are semantic, not decoration.
+  #  the hex grid, purple is Unit-01. Each one carries meaning.
   # ------------------------------------------------------------------------
   bg=#000000    # title card / MAGI screen ground
   fg=#FF9900    # NERV console body text
@@ -98,7 +97,7 @@ else
     #  1  red      警告 / alert red, also Unit-02
     #  2  green    Unit-01's stripes; the NERV hexagonal screen grid
     #  3  yellow   official EVA yellow; Unit-00 proto
-    #  4  blue     PATTERN BLUE — canon: target confirmed as Angel
+    #  4  blue     PATTERN BLUE, canon: target confirmed as Angel
     #  5  magenta  Unit-01 armor purple
     #  6  cyan     holographic readout, derived from slot 14
     #  7  white    bone / plugsuit off-white
@@ -109,7 +108,7 @@ else
     # 12  br blue  pattern blue at peak
     # 13  br mag   Unit-01 highlight
     # 14  br cyan  holo readout at peak
-    # 15  br white Matisse EB title-card white — the only pure white
+    # 15  br white Matisse EB title-card white, the only pure white
 fi
 
 i=0

@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 #
-# MAGI Terminal — Copyright (C) 2026 JimmyToluene
+# MAGI Terminal, Copyright (C) 2026 JimmyToluene
 # Licensed under the GNU General Public License v3.0. See LICENSE.
 """
-make-cover.py — stack two terminal screenshots into the README cover.
+make-cover.py: stack two terminal screenshots into the README cover.
 
 Usage:
     python3 tools/make-cover.py images/shot-nvidia.png images/shot-htop.png \
         -o images/cover.png
 
-Normalizes both shots to the same width (scaling the wider one down rather
-than upscaling the narrower one, so nothing gets softened), stacks them
-vertically with a thin amber rule between, and pads with title-card black.
+Normalizes both shots to the same width by scaling the wider one down, which
+keeps every pixel sharp, then stacks them vertically with a thin amber rule
+between and pads with title-card black.
 """
 
 import argparse

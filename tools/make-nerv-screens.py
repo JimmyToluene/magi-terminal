@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 #
-# MAGI Terminal — Copyright (C) 2026 JimmyToluene
+# MAGI Terminal, Copyright (C) 2026 JimmyToluene
 # Licensed under the GNU General Public License v3.0. See LICENSE.
 """
-make-nerv-screens.py — render the NERV console screens from scratch.
+make-nerv-screens.py: render the NERV console screens from scratch.
 
 Usage:
     python3 tools/make-nerv-screens.py -o images/
 
-These are clean-room recreations, not screencaps. Every pixel is drawn here
+These are clean-room recreations. Every pixel is drawn here
 from the palette in magi.sh and set in the PC-9800 font this repository
 builds, so they ship as original assets and double as a demonstration of what
 the NERV Console palette does with a real layout.
 
-The canvas is 640x400 — the native resolution of the NEC PC-9801, the machine
-NERV's displays were modeled on — then scaled by an integer factor with
+The canvas is 640x400, the native resolution of the NEC PC-9801 that NERV's
+displays were modeled on, then scaled by an integer factor with
 nearest-neighbour so the 8x16 cell stays sharp.
 
 Requires the font from the README's font section, installed or on --font:
@@ -27,13 +27,13 @@ import sys
 
 from PIL import Image, ImageDraw, ImageFont
 
-# NERV Console palette — see magi.sh
+# NERV Console palette, see magi.sh
 BG        = "#000000"   # title-card black
 FG        = "#FF9900"   # console body text
 RED       = "#E81900"   # 警告 alert red
 GREEN     = "#41BB42"   # Unit-01 stripes; the hexagonal screen grid
 YELLOW    = "#F6E201"   # official EVA yellow
-BLUE      = "#54A2D4"   # Pattern Blue — Angel confirmed
+BLUE      = "#54A2D4"   # Pattern Blue, Angel confirmed
 BR_BLUE   = "#7FC8F0"   # Pattern Blue at peak
 BR_RED    = "#FF2D0E"   # the alert flashing
 BR_YELLOW = "#F9CC38"   # caution striping
@@ -74,7 +74,7 @@ def hex_grid(d, color=GRID, r=22):
 
 
 def frame(d, box, color=CHROME, tick=10):
-    """Bracketed corner frame — NERV never draws a plain rectangle."""
+    """Bracketed corner frame, the way NERV draws every box."""
     x0, y0, x1, y1 = box
     for (cx, cy, sx, sy) in ((x0, y0, 1, 1), (x1, y0, -1, 1),
                              (x0, y1, 1, -1), (x1, y1, -1, -1)):
@@ -169,7 +169,7 @@ def screen_pattern_blue(fp):
 
 
 def screen_alert(fp):
-    """緊急事態 — the emergency card, caution striping and all."""
+    """緊急事態: the emergency card, caution striping and all."""
     im = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(im)
 
@@ -216,7 +216,7 @@ def main():
     if not fp:
         fp = next((p for p in FONT_CANDIDATES if os.path.exists(p)), None)
     if not fp or not os.path.exists(fp):
-        sys.exit("pc-9800-regular.ttf not found — build it (see README) or pass --font")
+        sys.exit("pc-9800-regular.ttf not found; build it (see README) or pass --font")
 
     os.makedirs(args.outdir, exist_ok=True)
     todo = [args.only] if args.only else sorted(SCREENS)
